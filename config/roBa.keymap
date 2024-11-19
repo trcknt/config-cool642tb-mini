@@ -31,14 +31,14 @@
             key-positions = <18 19>;
         };
 
-        pass {
-            bindings = <&pass>;
+        pas {
+            bindings = <&pas>;
             key-positions = <33 32>;
         };
     };
 
     macros {
-        pass: pass {
+        pas: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp LS(A) &kp A>;
