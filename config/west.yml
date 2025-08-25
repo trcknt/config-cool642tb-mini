@@ -7,10 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: cool642tb-mini
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: tadanaka
-      revision: main
+      revision: cool642tb-mini
   self:
     path: config
