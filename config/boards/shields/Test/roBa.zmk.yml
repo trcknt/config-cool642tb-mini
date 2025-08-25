@@ -1,8 +1,8 @@
 file_format: "1"
-id: roBa
-name: roBa
+id: cool642tb-mini
+name: cool642tb-mini
 type: shield
-url: https://github.com/kumamuk-git/zmk-config-roBa
+url: https://github.com/tadanaka/zmk-config-cool642tb-mini
 requires: [seeeduino_xiao_ble]
 features:
   - keys
