@@ -21,35 +21,9 @@
             key-positions = <12 13>;
         };
 
-        log {
-            bindings = <&log>;
-            key-positions = <20 21>;
-        };
-
         lang {
             bindings = <&kp LANG1>;
             key-positions = <18 19>;
-        };
-
-        pas {
-            bindings = <&pas>;
-            key-positions = <33 32>;
-        };
-    };
-
-    macros {
-        log: log {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp DOT &kp N &kp A &kp K &kp A &kp N &kp O &kp DOT &kp F &kp N8 &kp X>;
-            label = "LOG";
-        };
-
-        pas: pas {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp N1 &kp LS(A) &kp A>;
-            label = "PAS";
         };
     };
 
