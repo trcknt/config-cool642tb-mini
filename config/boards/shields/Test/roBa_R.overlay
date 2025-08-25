@@ -1,4 +1,4 @@
-#include "roBa.dtsi"
+#include "cool642tb-mini.dtsi"
 
 &default_transform {
     col-offset = <6>;
