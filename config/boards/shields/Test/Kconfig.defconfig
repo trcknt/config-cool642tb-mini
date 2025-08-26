@@ -28,5 +28,3 @@ config ZMK_EXT_MODULES
 config ZMK_EXT_MODULES_BATTERY
     default y
 
-# バッテリー設定ファイルをソースとして読み込む
-source "cool642tb-mini.conf"
