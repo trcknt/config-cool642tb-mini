@@ -20,3 +20,13 @@ config ZMK_SPLIT
     default y
 
 endif
+
+# バッテリーモジュールを有効にするための設定
+config ZMK_EXT_MODULES
+    default y
+
+config ZMK_EXT_MODULES_BATTERY
+    default y
+
+# バッテリー設定ファイルをソースとして読み込む
+source "cool642tb-mini.conf"
