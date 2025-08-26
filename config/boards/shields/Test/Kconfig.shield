@@ -3,3 +3,5 @@ config SHIELD_ROBA_R
 
 config SHIELD_ROBA_L
     def_bool $(shields_list_contains,cool642tb-mini_L)
+
+source "Kconfig.cool642tb-mini_R"
