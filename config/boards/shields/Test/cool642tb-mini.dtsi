@@ -111,4 +111,11 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
     };
+
+
+&vbatt {
+    vbatt_mv = <1400>; // 電圧をmV単位で定義
+    min_mv = <1000>;  // 最小電圧
+};
+
 };
