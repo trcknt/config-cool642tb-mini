@@ -11,18 +11,26 @@
             ;
 };
 
-&left_encoder {
-    status = "okay";
-};
-
-/ {
-    chosen {
-        zephyr,battery = &battery;
+&/ {
+    battery: battery {
+        compatible = "voltage-divider";
+        io-channels = <&adc 0>;          // A0 ピンが BAT 電圧につながってる
+        output-ohms = <100000>;          // 分圧抵抗値（実際の値に合わせて調整）
+        full-ohms = <200000>;
+        power-gpios = <>;
+        zephyr,voltage-min-mv = <2000>;  // 0% (NiMH 1.0V ×2)
+        zephyr,voltage-max-mv = <2700>;  // 100% (NiMH 満充電直後)
     };
 };
 
-&battery {
-    /* エネループ 2本用設定 */
-    zephyr,voltage-min-mv = <2000>;  // 0%とみなす電圧 (1.0V x2)
-    zephyr,voltage-max-mv = <2700>;  // 100%とみなす電圧 (満充電直後)
+&adc {
+    status = "okay";
 };
+
+&adc_ch0 {
+    status = "okay";
+};
+left_encoder {
+    status = "okay";
+};
+
