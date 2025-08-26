@@ -14,3 +14,15 @@
 &left_encoder {
     status = "okay";
 };
+
+/ {
+    chosen {
+        zephyr,battery = &battery;
+    };
+};
+
+&battery {
+    /* エネループ 2本用設定 */
+    zephyr,voltage-min-mv = <2000>;  // 0%とみなす電圧 (1.0V x2)
+    zephyr,voltage-max-mv = <2700>;  // 100%とみなす電圧 (満充電直後)
+};
