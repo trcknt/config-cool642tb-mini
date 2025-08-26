@@ -1,0 +1,10 @@
+/ {
+    chosen {
+        zmk,battery = &vbatt;
+    };
+};
+
+&vbatt {
+    vbatt-divider-0-resistor = <100000>;
+    vbatt-divider-1-resistor = <100000>;
+};
