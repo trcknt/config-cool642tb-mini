@@ -21,10 +21,3 @@ config ZMK_SPLIT
 
 endif
 
-# バッテリーモジュールを有効にするための設定
-config ZMK_EXT_MODULES
-    default y
-
-config ZMK_EXT_MODULES_BATTERY
-    default y
-
