@@ -33,17 +33,15 @@
     };
 };
 
-& {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-    };
+trackball_listener: trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+};
 
-    battery_sensor: battery_sensor {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 6>;
-        full-mv = <2400>;
-        empty-mv = <2000>;
-        /* output-ohmsは無し（直結の場合） */
-    };
+battery_sensor: battery_sensor {
+    compatible = "zmk,battery-voltage-divider";
+    io-channels = <&adc 6>;
+    full-mv = <2400>;
+    empty-mv = <2000>;
+    /* output-ohmsは無し（直結の場合） */
 };
