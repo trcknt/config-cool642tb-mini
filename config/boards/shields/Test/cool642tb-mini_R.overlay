@@ -1,9 +1,5 @@
 /dts-v1/;
 
-/ {
-    compatible = "zmk,cool642tb-mini";
-};
-
 #include "cool642tb-mini.dtsi"
 
 &default_transform {
