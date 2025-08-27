@@ -112,13 +112,7 @@
         triggers-per-rotation = <10>;
     };
 
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 2>;            // ADCピンの指定（要確認）
-        output-ohms = <2000000>;           // 分圧抵抗値（例: 2MΩ）
-        full-mv = <2400>;                  // 満充電電圧（例:2.4V=2400）
-        empty-mv = <2000>;                 // 空電池電圧（例:2.0V=2000）
-    };
+    
 
 
 
