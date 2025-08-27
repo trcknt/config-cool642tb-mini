@@ -1,5 +1,0 @@
-config ZMK_EXT_MODULES
-    bool
-
-config ZMK_EXT_MODULES_BATTERY
-    bool
