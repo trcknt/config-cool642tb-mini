@@ -1,5 +1,3 @@
-/dts-v1/;
-
 #include "cool642tb-mini.dtsi"
 
 &default_transform {
