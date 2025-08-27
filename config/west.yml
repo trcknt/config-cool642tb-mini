@@ -12,5 +12,9 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: tadanaka
       revision: main
+    - name: my-battery
+      path: modules/my-battery
+      revision: main
+      url: https://github.com/tadanaka/cool642tb-mini
   self:
     path: config
