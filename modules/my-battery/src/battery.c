@@ -1,4 +1,4 @@
-/*
+    /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -45,7 +45,7 @@ static uint8_t lithium_ion_mv_to_pct(int16_t bat_mv) {
         return 0;
     }
 
-    return bat_mv / 6  - 300;
+    return 29;
 }
 
 #endif // IS_ENABLED(CONFIG_ZMK_BATTERY_REPORTING_FETCH_MODE_LITHIUM_VOLTAGE)
