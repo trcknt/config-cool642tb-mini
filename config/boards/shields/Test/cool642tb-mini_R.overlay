@@ -60,5 +60,14 @@
         automouse-layer = <4>;
         scroll-layers = <5>;
     };
+
+    /battery-sensor {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 0>;      // ADCチャンネルは基板依存。正しいチャンネルに書き換えてください。
+        full-mv = <2400>;            // エネループ2本＝2.4V（満充電）
+        empty-mv = <2000>;           // 電圧低下目安（空の状態）
+    /* output-ohmsは無し（分圧回路なし） */
+};
+
 };
 
