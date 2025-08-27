@@ -39,7 +39,7 @@
         device = <&trackball>;
     };
 
-    battery-sensor {
+    battery_sensor: battery_sensor {
         compatible = "zmk,battery-voltage-divider";
         io-channels = <&adc 6>;
         full-mv = <2400>;
