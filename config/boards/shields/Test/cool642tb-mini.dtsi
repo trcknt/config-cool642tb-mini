@@ -112,4 +112,12 @@
         triggers-per-rotation = <10>;
     };
 
+    battery_sensor: battery-sensor {
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 0>;
+        full-mv = <2400>;   // 満充電2.4V
+        empty-mv = <2000>;  // 空2.0V
+    };
+
+
 };
