@@ -60,4 +60,8 @@
         automouse-layer = <4>;
         scroll-layers = <5>;
     };
+&vbatt {  
+    output-ohms = <300000>;  
+    full-ohms = <(1200000 + 300000)>;  
+　　};
 };
