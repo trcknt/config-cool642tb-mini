@@ -1,10 +1,5 @@
 #include "cool642tb-mini.dtsi"
 
-&vbatt {
-    output-ohms = <300000>;  
-    full-ohms = <(1200000 + 300000)>;  
-};
-
 &default_transform {
     col-offset = <6>;
 };
