@@ -2,8 +2,8 @@ manifest:
   remotes:  
     - name: zmkfirmware  
       url-base: https://github.com/zmkfirmware  
-    - name: tadanaka  
-      url-base: https://github.com/tadanaka  
+    - name: na-ka-no
+      url-base: https://github.com/na-ka-no
   
   projects:  
     - name: zmk  
@@ -11,8 +11,8 @@ manifest:
       revision: main  # カスタムブランチ名  
       import: app/west.yml  
     - name: zmk-pmw3610-driver  
-      remote: tadanaka  
+      remote: na-ka-no
       revision: main  
     - name: zmk-module-NiMHbattery-for-cool642_mini  
-      remote: tadanaka  
+      remote: na-ka-no
       revision: main
