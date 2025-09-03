@@ -7,12 +7,12 @@ manifest:
   
   projects:  
     - name: zmk  
-      remote: tadanaka  # フォークしたリポジトリを参照  
+      remote: zmkfirmware  # フォークしたリポジトリを参照  
       revision: main  # カスタムブランチ名  
       import: app/west.yml  
     - name: zmk-pmw3610-driver  
       remote: tadanaka  
       revision: main  
-  
-  self:  
-    path: config
+    - name: zmk-module-NiMHbattery-for-cool642_mini  
+      remote: tadanaka  
+      revision: main
