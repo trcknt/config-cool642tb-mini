@@ -3,10 +3,10 @@ manifest:
     - name: zmkfirmware  
       url-base: https://github.com/zmkfirmware  
     - name: na-ka-no
-      url-base: https://github.com/tadanaka  
+      url-base: https://github.com/na-ka-no
   
   projects:  
-    - name: zmk  
+    - name: zmk-for-cool642_mini
       remote: na-ka-no  # フォークしたリポジトリを参照  
       revision: main  # カスタムブランチ名  
       import: app/west.yml  
