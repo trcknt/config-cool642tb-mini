@@ -1,4 +1,0 @@
-name: my-battery
-build:
-  cmake: src
-  kconfig: Kconfig
