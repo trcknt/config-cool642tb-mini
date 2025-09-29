@@ -3,9 +3,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
+
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
     flavor = "balanced";
@@ -27,17 +29,15 @@
         };
     };
 
-    // エンコーダー：マウススクロール(MOVE_Y)
+    behaviors {
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            tap-ms = <20>;
+        };
 
-    scroll_move_y: sensor_rotate_msc_for_move_y {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc MOVE_Y(20)>, <&msc MOVE_Y(-20)>;
-
-        // tap-ms下限メモ Yの値で可変: Y(15) <81>, Y(20) <65>, Y(25) <49>
-
-        tap-ms = <65>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -50,7 +50,7 @@
 &kp TAB             &kp C_MUTE  &kp LEFT_GUI  &kp LEFT_ALT  &lt 2 SPACE  &mt LSHIFT DELETE      &mt RSHFT BACKSPACE  &lt 1 ENTER                             &kp F4
             >;
 
-            sensor-bindings = <&scroll_move_y>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
