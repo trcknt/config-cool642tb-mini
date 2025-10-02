@@ -58,10 +58,10 @@
 
         number_symbol {
             bindings = <
-&kp N1                &kp N2                &kp N3      &kp N4      &kp N5                                                          &kp N0            &kp N6            &kp N7      &kp N8             &kp N9
-&kp LS(N1)            &kp LS(SINGLE_QUOTE)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none                      &none                    &kp LEFT_BRACKET  &kp LS(N9)        &kp LS(N0)  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH
-&kp LEFT_SHIFT        &none                 &kp CARET   &kp LS(N7)  &none       &kp LC(LS(SEMICOLON))      &none                    &kp SEMICOLON     &kp SINGLE_QUOTE  &kp COMMA   &kp PERIOD         &mt RIGHT_SHIFT INT_YEN
-&kp LS(LEFT_CONTROL)  &none                 &none       &none       &none       &kp LC(MINUS)              &mt RIGHT_CONTROL EQUAL  &kp DELETE                                                         &kp INT1
+&kp N1                &kp N2      &kp N3      &kp N4      &kp N5                                                          &kp N0            &kp N6            &kp N7      &kp N8             &kp N9
+&kp LS(N1)            &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &none                      &none                    &kp LEFT_BRACKET  &kp LS(N8)        &kp LS(N9)  &kp RIGHT_BRACKET  &kp NON_US_HASH
+&kp LEFT_SHIFT        &none       &kp CARET   &kp LS(N7)  &none       &kp LC(LS(SEMICOLON))      &none                    &kp SEMICOLON     &kp SINGLE_QUOTE  &kp COMMA   &kp PERIOD         &mt RIGHT_SHIFT INT_YEN
+&kp LS(LEFT_CONTROL)  &none       &none       &none       &none       &kp LC(MINUS)              &mt RIGHT_CONTROL EQUAL  &kp DELETE                                                         &kp LS(INT1)
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -96,9 +96,9 @@
 
         scroll_other {
             bindings = <
-&none                 &none               &kp LG(UP_ARROW)    &none                &none                                                          &none     &none             &none  &none  &none
-&kp LEFT_CONTROL      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none                   &none                        &none     &none     &kp LEFT_CONTROL  &none  &none  &none
-&kp LEFT_SHIFT        &none               &none               &none                &none                   &none                        &none     &none     &none             &none  &none  &none
+&none                 &none               &kp LG(UP_ARROW)    &none                &none                                                          &none     &none  &none  &none             &none
+&kp LEFT_CONTROL      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none                   &none                        &none     &none     &none  &none  &kp LEFT_CONTROL  &none
+&kp LEFT_SHIFT        &none               &none               &none                &none                   &none                        &none     &none     &none  &none  &none             &none
 &kp LS(LEFT_CONTROL)  &none               &none               &none                &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))      &mkp MB4  &mkp MB5                                  &none
             >;
         };
