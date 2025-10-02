@@ -71,7 +71,7 @@
             bindings = <
 &kp LS(ESCAPE)        &kp F2  &kp LC(X)  &kp LS(LG(S))   &none                                             &none       &kp HOME        &kp UP_ARROW     &none  &kp END
 &kp LEFT_CONTROL      &kp F4  &kp LC(C)  &none           &none    &none                 &none              &none       &kp LEFT_ARROW  &kp RIGHT_ARROW  &none  &none
-&kp LEFT_SHIFT        &kp F5  &none      &none           &none    &none                 &none              &none       &kp DOWN_ARROW  &none            &none  &none
+&kp LEFT_SHIFT        &kp F5  &none      &none           &none    &none                 &none              &none       &kp DOWN_ARROW  &none            &none  &kp RIGHT_SHIFT
 &kp LS(LEFT_CONTROL)  &none   &none      &kp INT_HENKAN  &kp F10  &kp INT_MUHENKAN      &kp RIGHT_CONTROL  &kp DELETE                                          &none
             >;
         };
