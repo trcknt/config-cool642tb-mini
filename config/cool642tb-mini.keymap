@@ -8,12 +8,6 @@
 #define NUM 6
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-// OS設定を日本語キーボードのまま使用するための変換定義
-
-#define JP_YEN          0x89              // ¥
-#define JP_PIPE         LS(0x89)          // |
-#define JP_UNDERSCORE   LS(0x87)          // _
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
